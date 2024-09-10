@@ -1,4 +1,4 @@
-termux-miner
+termux-pepepow-miner
 ==============
 
 [![Build Status](https://travis-ci.org/tpruvot/cpuminer-multi.svg)](https://travis-ci.org/tpruvot/cpuminer-multi)
@@ -100,6 +100,7 @@ Algorithms
  * ✓ __yescryptR16__ (Goldcash [GOLD] Eli [ELI])
  * ✓ __yescryptR32__ (Documentchain [DMS])
  * ✓ __zr5__ (Ziftrcoin [ZRC])
+ * ✓ __xelisv2__ (XelisHashV2  [PepePOW HardFork, maybe XEL])
 
 #### Implemented, but untested
  * ? hefty1 (Heavycoin)
@@ -124,7 +125,7 @@ Download
 ========
  * Windows releases: https://github.com/tpruvot/cpuminer-multi/releases
  * Git tree:   https://github.com/tpruvot/cpuminer-multi
-   * Clone with `git clone https://github.com/tpruvot/cpuminer-multi`
+ * Clone with `git clone https://github.com/tpruvot/cpuminer-multi`
 
 Build
 =====
