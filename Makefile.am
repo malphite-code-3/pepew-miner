@@ -143,6 +143,7 @@ cpuminer_SOURCES = \
   algo/xevan.c \
   algo/yescrypt.c \
   algo/yespower.c \
+  algo/xelisv2.c \
   algo/zr5.c
 
 disable_flags =
