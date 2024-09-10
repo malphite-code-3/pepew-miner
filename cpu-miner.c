@@ -254,6 +254,7 @@ Options:\n\
                           x16rv2         X16Rv2 (Raven / Trivechain)\n\
                           x16s           X16S (Pigeon)\n\
                           x17            X17\n\
+						  xelisv2        XelisV2 (PepePoW)\n\
                           0x10           0X10 (Chain0x [CHOX])\n\
                           x20r           X20R\n\
                           xevan          Xevan (BitSend)\n\
@@ -2221,6 +2222,9 @@ static void *miner_thread(void *userdata)
 			case ALGO_MEME:
 				max64 = 0x9ffffLL;
 				break;
+			case ALGO_XELISV2:
+				max64 = 0x9ffffLL;
+				break;
 			case ALGO_SKEIN:
 			case ALGO_SKEIN2:
 			case ALGO_SKUNK:
@@ -2473,6 +2477,9 @@ static void *miner_thread(void *userdata)
 			break;
 		case ALGO_0X10:
 			rc = scanhash_0x10(thr_id, &work, max_nonce, &hashes_done);
+			break;
+		case ALGO_XELISV2:
+			rc = scanhash_xelisv2(thr_id, &work, max_nonce, &hashes_done);
 			break;
 		case ALGO_XEVAN:
 			rc = scanhash_xevan(thr_id, &work, max_nonce, &hashes_done);
