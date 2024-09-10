@@ -91,6 +91,7 @@ enum algos {
 	ALGO_YESPOWERTIDE, /* TDC (Tidecoin) */
 	ALGO_YESPOWERURX, /* URX (UraniumX) */
 	ALGO_ZR5,
+	ALGO_XELISV2, /* XelisV2  (PepePOW Hard Fork) */
 	ALGO_COUNT
 };
 
@@ -187,5 +188,6 @@ static const char *algo_names[] = {
 	"yespowerTIDE",
 	"yespowerURX",
 	"zr5",
+	"xelisv2",
 	"\0"
 };
